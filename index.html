@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Journal — Göksel Günlüğünüz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a1a;
+            --surface: #12122a;
+            --border: #1e1e3a;
+            --primary: #7c5cbf;
+            --accent: #c4a0ff;
+            --text: #e8e4f0;
+            --text-muted: #9992ab;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: 
+                radial-gradient(1px 1px at 10% 20%, rgba(196,160,255,0.4), transparent),
+                radial-gradient(1px 1px at 30% 50%, rgba(196,160,255,0.3), transparent),
+                radial-gradient(1px 1px at 50% 10%, rgba(255,255,255,0.3), transparent),
+                radial-gradient(1px 1px at 70% 60%, rgba(196,160,255,0.2), transparent),
+                radial-gradient(1px 1px at 90% 30%, rgba(255,255,255,0.4), transparent),
+                radial-gradient(1px 1px at 15% 80%, rgba(196,160,255,0.3), transparent),
+                radial-gradient(1px 1px at 55% 90%, rgba(255,255,255,0.2), transparent),
+                radial-gradient(1px 1px at 80% 85%, rgba(196,160,255,0.3), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 60px 24px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .logo-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin-bottom: 48px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .links a:hover {
+            border-color: var(--primary);
+            background: rgba(124, 92, 191, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .links a .link-icon {
+            font-size: 20px;
+        }
+
+        .footer {
+            margin-top: 48px;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 40px 20px; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="logo-icon">✦</div>
+        <h1>Cosmic Journal</h1>
+        <p class="tagline">Göksel olaylarla iç dünyanızı keşfedin ✦</p>
+
+        <div class="links">
+            <a href="support.html">
+                <span class="link-icon">💬</span>
+                Destek / Support
+            </a>
+            <a href="privacy-policy.html">
+                <span class="link-icon">🔒</span>
+                Gizlilik Politikası / Privacy Policy
+            </a>
+        </div>
+
+        <p class="footer">© 2026 Cosmic Journal. Tüm hakları saklıdır.</p>
+    </div>
+</body>
+</html>

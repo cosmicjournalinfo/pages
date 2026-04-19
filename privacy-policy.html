@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Journal — Gizlilik Politikası / Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a1a;
+            --surface: #12122a;
+            --border: #1e1e3a;
+            --primary: #7c5cbf;
+            --accent: #c4a0ff;
+            --text: #e8e4f0;
+            --text-muted: #9992ab;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: 
+                radial-gradient(1px 1px at 10% 20%, rgba(196,160,255,0.4), transparent),
+                radial-gradient(1px 1px at 30% 50%, rgba(196,160,255,0.3), transparent),
+                radial-gradient(1px 1px at 50% 10%, rgba(255,255,255,0.3), transparent),
+                radial-gradient(1px 1px at 70% 60%, rgba(196,160,255,0.2), transparent),
+                radial-gradient(1px 1px at 90% 30%, rgba(255,255,255,0.4), transparent),
+                radial-gradient(1px 1px at 15% 80%, rgba(196,160,255,0.3), transparent),
+                radial-gradient(1px 1px at 55% 90%, rgba(255,255,255,0.2), transparent),
+                radial-gradient(1px 1px at 80% 85%, rgba(196,160,255,0.3), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 60px 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .logo h1 {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .lang-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        .lang-btn:hover {
+            border-color: var(--primary);
+        }
+
+        .section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 20px 0 8px;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .date {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .back-link a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 24px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .back-link a:hover {
+            border-color: var(--primary);
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .hidden { display: none; }
+
+        @media (max-width: 600px) {
+            .container { padding: 32px 16px; }
+            .section { padding: 24px 20px; }
+            .logo h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">✦</div>
+            <h1>Cosmic Journal</h1>
+            <p>Gizlilik Politikası / Privacy Policy</p>
+        </div>
+
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('tr')">🇹🇷 Türkçe</button>
+            <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
+        </div>
+
+        <!-- TURKISH -->
+        <div id="content-tr">
+            <div class="section">
+                <h2>1. Giriş</h2>
+                <p>Cosmic Journal ("Uygulama"), kullanıcılarının gizliliğine büyük önem verir. Bu Gizlilik Politikası, uygulamamızı kullandığınızda hangi bilgileri topladığımızı, nasıl kullandığımızı ve koruduğumuzu açıklar.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Topladığımız Bilgiler</h2>
+                <h3>2.1 Hesap Bilgileri</h3>
+                <p>Uygulamaya giriş yaparken aşağıdaki kimlik doğrulama yöntemlerini kullanabilirsiniz:</p>
+                <ul>
+                    <li><strong>Apple ile Giriş:</strong> Apple ID'nize bağlı ad ve e-posta adresi</li>
+                    <li><strong>Google ile Giriş:</strong> Google hesabınıza bağlı ad, e-posta adresi ve profil fotoğrafı</li>
+                </ul>
+
+                <h3>2.2 Kullanıcı İçerikleri</h3>
+                <p>Uygulamada oluşturduğunuz günlük kayıtları, notlar ve kişisel içgörüler Firebase Firestore üzerinde güvenli bir şekilde saklanır.</p>
+
+                <h3>2.3 Cihaz Bilgileri</h3>
+                <p>Uygulama performansını iyileştirmek amacıyla temel cihaz bilgileri (işletim sistemi sürümü, cihaz modeli) toplanabilir.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Bilgilerin Kullanımı</h2>
+                <p>Topladığımız bilgileri yalnızca şu amaçlarla kullanırız:</p>
+                <ul>
+                    <li>Hesabınızı oluşturmak ve yönetmek</li>
+                    <li>Günlük verilerinizi cihazlar arası senkronize etmek</li>
+                    <li>Bildirim tercihlerinizi yönetmek</li>
+                    <li>Uygulama deneyimini iyileştirmek</li>
+                </ul>
+                <p><strong>Verilerinizi hiçbir koşulda üçüncü taraflarla paylaşmaz, satmaz veya kiralamayız.</strong></p>
+            </div>
+
+            <div class="section">
+                <h2>4. Veri Güvenliği</h2>
+                <p>Verileriniz Google Firebase altyapısı üzerinde, endüstri standardı şifreleme yöntemleriyle korunmaktadır. Tüm veri aktarımları SSL/TLS protokolüyle şifrelenir.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Veri Saklama ve Silme</h2>
+                <p>Hesabınızı sildiğinizde tüm kişisel verileriniz ve günlük kayıtlarınız kalıcı olarak silinir. Hesap silme işlemi uygulama içindeki Ayarlar bölümünden gerçekleştirilebilir.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Üçüncü Taraf Hizmetler</h2>
+                <p>Uygulamamız aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:</p>
+                <ul>
+                    <li><strong>Firebase Authentication:</strong> Kimlik doğrulama</li>
+                    <li><strong>Cloud Firestore:</strong> Veri depolama</li>
+                    <li><strong>Google Sign-In:</strong> Google hesabı ile giriş</li>
+                    <li><strong>Sign in with Apple:</strong> Apple hesabı ile giriş</li>
+                </ul>
+                <p>Bu hizmetlerin kendi gizlilik politikaları için ilgili şirketlerin web sitelerini ziyaret edebilirsiniz.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Çocukların Gizliliği</h2>
+                <p>Uygulamamız 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamaz. Eğer 13 yaşından küçük bir çocuğun bilgi sağladığını fark edersek, bu bilgileri derhal sileriz.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Değişiklikler</h2>
+                <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinden bildirilecektir.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. İletişim</h2>
+                <p>Gizlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
+                <p>📧 <a href="mailto:cosmicjournalapp@gmail.com">cosmicjournalapp@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="content-en" class="hidden">
+            <div class="section">
+                <h2>1. Introduction</h2>
+                <p>Cosmic Journal ("App") deeply values the privacy of its users. This Privacy Policy explains what information we collect when you use our app, how we use it, and how we protect it.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Information We Collect</h2>
+                <h3>2.1 Account Information</h3>
+                <p>When signing into the app, you may use the following authentication methods:</p>
+                <ul>
+                    <li><strong>Sign in with Apple:</strong> Name and email address associated with your Apple ID</li>
+                    <li><strong>Sign in with Google:</strong> Name, email address, and profile photo associated with your Google account</li>
+                </ul>
+
+                <h3>2.2 User Content</h3>
+                <p>Journal entries, notes, and personal insights you create in the app are securely stored on Firebase Firestore.</p>
+
+                <h3>2.3 Device Information</h3>
+                <p>Basic device information (operating system version, device model) may be collected to improve app performance.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Use of Information</h2>
+                <p>We only use the collected information for the following purposes:</p>
+                <ul>
+                    <li>Creating and managing your account</li>
+                    <li>Synchronizing your journal data across devices</li>
+                    <li>Managing your notification preferences</li>
+                    <li>Improving the app experience</li>
+                </ul>
+                <p><strong>We never share, sell, or rent your data to third parties under any circumstances.</strong></p>
+            </div>
+
+            <div class="section">
+                <h2>4. Data Security</h2>
+                <p>Your data is protected on Google Firebase infrastructure using industry-standard encryption methods. All data transfers are encrypted via SSL/TLS protocols.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Data Retention and Deletion</h2>
+                <p>When you delete your account, all personal data and journal entries are permanently deleted. Account deletion can be performed from the Settings section within the app.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Third-Party Services</h2>
+                <p>Our app uses the following third-party services:</p>
+                <ul>
+                    <li><strong>Firebase Authentication:</strong> Identity verification</li>
+                    <li><strong>Cloud Firestore:</strong> Data storage</li>
+                    <li><strong>Google Sign-In:</strong> Sign in with Google account</li>
+                    <li><strong>Sign in with Apple:</strong> Sign in with Apple account</li>
+                </ul>
+                <p>Please visit the respective company websites for their privacy policies.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Children's Privacy</h2>
+                <p>Our app does not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided information, we will immediately delete it.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Changes</h2>
+                <p>This privacy policy may be updated from time to time. Significant changes will be notified through the app.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Contact</h2>
+                <p>For questions about our privacy policy, you can contact us:</p>
+                <p>📧 <a href="mailto:cosmicjournalapp@gmail.com">cosmicjournalapp@gmail.com</a></p>
+            </div>
+        </div>
+
+        <p class="date">Son güncelleme / Last updated: 20 Nisan 2026</p>
+
+        <div class="back-link">
+            <a href="index.html">← Ana Sayfa / Home</a>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('content-tr').classList.toggle('hidden', lang !== 'tr');
+            document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
